@@ -61,7 +61,7 @@ var selectedRecording = null;
 var selectedRecordingInfo = null;
 var localStream = null;
 var BlitzSDK = {};
-function startBlitz(uid,sid)
+function startsBlitz(uid,sid)
 {
 	BlitzSDK.init(
 		{
@@ -140,7 +140,7 @@ BlitzSDK.setup = function(){
 	}
 	getUserMedia({ audio: true, video: true }, function(stream) {
 			if($('#rthevideo').length === 0) {
-				$(BlitzSDK.localVideoId).append('<video class="rounded centered" id="rthevideo" width=320 height=240 autoplay/>');
+				$(BlitzSDK.localVideoId).append('<video class="rounded centered" id="rthevideo" width=100 height=75 autoplay/>');
 			}
 			attachMediaStream($('#rthevideo').get(0), stream);
 			$("#rthevideo").get(0).muted = "muted";
@@ -248,7 +248,7 @@ BlitzSDK.join = function(uid,pwd,sid,addr)
 							Janus.debug(JSON.stringify(stream));
 
 							if($(BlitzSDK.localVideoId).length === 0) {
-								$('#rvideobox').append('<video class="rounded centered" id="rthevideo" width=500 height=800 autoplay/>');
+								$('#rvideobox').append('<video class="rounded centered" id="rthevideo" width=100 height=75 autoplay/>');
 							}
 							attachMediaStream($('#rthevideo').get(0), stream);
 							$("#rthevideo").get(0).muted = "muted";
@@ -258,7 +258,7 @@ BlitzSDK.join = function(uid,pwd,sid,addr)
 							Janus.debug(" ::: Got a local stream :::");
 							Janus.debug(JSON.stringify(stream));
 							if($('#lthevideo').length === 0)
-								$(BlitzSDK.remoteVideoId).append('<video class="rounded centered" id="lthevideo" width=320 height=240 autoplay/>');
+								$(BlitzSDK.remoteVideoId).append('<video class="rounded centered" id="lthevideo" width=308 height=212 autoplay/>');
 							attachMediaStream($('#lthevideo').get(0), stream);
 							$("#rthevideo").get(0).unmuteAudio();
 
