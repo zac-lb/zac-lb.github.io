@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<aacdecoder>audio/AacDecoder.swf</aacdecoder>
+	<aacencoder>audio/aacEncoder.swf</aacencoder>
+	<amrdecoder>audio/AmrDecoder.swf</amrdecoder>
+	<amrencoder>audio/AmrEncoder.swf</amrencoder>
+	<silkdecoder>audio/SilkDecoder.swf</silkdecoder>
+
+	<ip>183.60.177.247</ip>
+	
+	<apIp>218.16.227.130</apIp>
+	<apPort>1083</apPort>
+</data>
