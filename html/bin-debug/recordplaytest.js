@@ -44,9 +44,9 @@
 //
 var server = null;
 if(window.location.protocol === 'http:')
-	server = "http://172.16.16.17:8088/janus";
+	server = "http://114.215.190.254:8088/janus";
 else
-	server = "https://172.16.16.17:8889/janus";
+	server = "https://114.215.190.254:8889/janus";
 
 var janus = null;
 var recordplay = null;
